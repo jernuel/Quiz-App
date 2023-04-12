@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="quiz-container">
+      
+      <div id="style">
+        <div id="start-up">
+          <h1>Quiz</h1>
+          
+          <label for="StudentName">Name:</label><br>
+          <input type="text" name="Name" id="Name" placeholder="Enter name" ><br>
+          <label for="StudentNumber">Number:</label><br>
+          <input type="text" name="Name" id="Number"placeholder="Enter number" >
+          
+        </div>
+
+        
+      <div id="question-container">
+        <p id="timer"><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tens">00</span></p>
+        <p id="question"></p>
+        <ul id="answer-buttons">
+          <li><button class="answer-button"></button></li>
+          <li><button class="answer-button"></button></li>
+          <li><button class="answer-button"></button></li>
+          <li><button class="answer-button"></button></li>
+        </ul>
+      </div>
+
+      <div id="controls">
+        <button id="start-button">Start</button>
+        <button id="next-button">Next</button>
+        <button id="show-button">Show Results</button>
+
+      </div>
+      
+      <div id="results-page">
+        <canvas id="myChart"></canvas>
+      </div>
+ 
+    </div> 
+    
+  </div>
+  </div>
+   
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+  </body>
+</html>
